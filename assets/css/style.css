@@ -560,6 +560,36 @@ section {
   padding-bottom: 30px;
 }
 
+.section-title h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #e0c6ad;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #c1b2a2;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: 400;
