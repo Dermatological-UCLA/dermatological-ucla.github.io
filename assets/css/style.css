@@ -13,6 +13,25 @@ body {
   color: #444;
 }
 
+.parallax-container {
+  /* Use a relevant image URL or path */
+  background-image: url('assets/img/team/group.jpg'); 
+
+  /* Set the height for the effect */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* A semi-transparent white box for the content */
+}
+
 a {
   color: #a3b2a4;
   text-decoration: none;
