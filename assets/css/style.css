@@ -964,6 +964,7 @@ section {
 .features h3 {
   font-weight: 400;
   font-size: 24px;
+  display: block;
 }
 
 .features ul {

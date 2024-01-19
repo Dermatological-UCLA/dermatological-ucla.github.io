@@ -6,6 +6,7 @@
         fill: #af7448;
         opacity: .6;
         stroke-width: 0px;
+        padding-bottom: 50%;
       }
 
       .cls-2 {
@@ -13,6 +14,7 @@
         stroke: #000;
         stroke-miterlimit: 10;
         stroke-width: .25px;
+        padding-bottom: 20%;
       }
     </style>
   </defs>
