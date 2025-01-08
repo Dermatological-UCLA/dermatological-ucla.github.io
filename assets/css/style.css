@@ -242,18 +242,19 @@ h6,
 
 .navbar .dropdown .dropdown ul {
 	top: 0;
-	left: 100%;
+	left: -85%;
 	visibility: hidden;
 	opacity: 0;
-	margin-left: -49px;
+	margin-left: -70px;
 }
 
 .navbar .dropdown .dropdown:hover > ul {
 	opacity: 1;
 	visibility: visible;
+	left: -90%;
 	pointer-events: auto;
 }
-
+/* 
 @media (max-width: 1366px) {
 	.navbar .dropdown .dropdown ul {
 		left: -90%;
@@ -262,7 +263,7 @@ h6,
 	.navbar .dropdown .dropdown:hover > ul {
 		left: -100%;
 	}
-}
+} */
 
 /**
 * Mobile Navigation 
