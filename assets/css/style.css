@@ -295,7 +295,8 @@ h6,
 	left: 0;
 	bottom: 0;
 	background: rgba(17, 38, 48, 0.9);
-	transition: 0.3s;
+	transition: 0.3s;	
+	max-height: 500px;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -315,6 +316,7 @@ h6,
 	background-color: #fff;
 	overflow-y: auto;
 	transition: 0.3s;
+	min-width:350px;
 }
 
 .navbar-mobile a,
@@ -334,7 +336,6 @@ h6,
 .navbar-mobile .getstarted:focus {
 	margin: 15px;
 }
-
 .navbar-mobile .dropdown ul {
 	position: static;
 	display: none;
@@ -343,21 +344,33 @@ h6,
 	z-index: 99;
 	opacity: 1;
 	visibility: visible;
-	background: #fff;
-	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+	box-shadow: 0px 0px 30px rgba(128, 186, 121, 0.25);
+	border-radius: 5%;
+
+}
+
+.navbar-mobile .dropdown .dropdown ul {
+	opacity: 1;
+	visibility: visible;
+	border-radius: 3%;
 }
 
 .navbar-mobile .dropdown ul li {
-	min-width: 200px;
+	max-width: 100px;
+
 }
 
 .navbar-mobile .dropdown ul a {
-	padding: 10px 20px;
+	padding: 10px;
 }
 
 .navbar-mobile .dropdown ul a i {
 	font-size: 12px;
 }
+
+/* .navbar-mobile .dropdown ul li:hover{
+	margin-left: 50px;
+} */
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
@@ -368,15 +381,20 @@ h6,
 .navbar-mobile .dropdown > .dropdown-active {
 	display: block;
 }
+.navbar-mobile .dropdown ul {
+	max-width: 10px;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
 	width: 100%;
-	height: 90vh;
+	height: 85vh;
 	overflow: hidden;
 	position: relative;
+
+	
 }
 
 #hero::after {
@@ -384,7 +402,7 @@ h6,
 	position: absolute;
 	left: 50%;
 	top: 0;
-	width: 130%;
+	width: 100%;
 	height: 95%;
 	background: linear-gradient(
 			to right,
@@ -394,6 +412,7 @@ h6,
 		url('../img/hero-bg.png') center top no-repeat;
 	z-index: 0;
 	border-radius: 0 0 50% 50%;
+	background-size: cover;
 	transform: translateX(-50%) rotate(0deg);
 }
 
@@ -485,7 +504,6 @@ h6,
 		width: 5%;
 	}
 }
-
 @media (max-width: 768px) {
 	#hero::after {
 		width: 180%;
@@ -525,6 +543,12 @@ h6,
 		border-radius: 0 0 50% 50%;
 		transform: translateX(-50%) translateY(20px) rotate(4deg);
 	}
+}
+@media (min-width: 1200px) {
+    #hero {
+        background-position: top center;
+        background-size: contain;
+    }
 }
 
 /*--------------------------------------------------------------
