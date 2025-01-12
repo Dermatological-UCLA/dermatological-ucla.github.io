@@ -504,6 +504,18 @@ h6,
 		width: 5%;
 	}
 }
+
+.large-img img{
+	width: 100%; 
+	height: 625px; 
+	object-fit: cover; 
+  }
+
+.small-img img{
+	width: 100%; 
+	height: 364px; 
+	object-fit: cover; 
+}
 @media (max-width: 768px) {
 	#hero::after {
 		width: 180%;
