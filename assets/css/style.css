@@ -1575,6 +1575,32 @@ section {
 	overflow: hidden;
 }
 
+.team .member .member-img-short{
+	position: relative;
+	overflow: hidden;
+	height: 275px;
+
+}
+.team .member .member-img-short img {
+    width: 100%;       
+    height: 100%;  
+    object-fit: cover;   
+    display: block;      
+}
+
+.team .member .member-img-large  {
+    position: relative;
+	overflow: hidden;
+	height: 459px; 
+}
+.team .member .member-img-large img {
+    width: 100%;       
+    height: 100%;  
+    object-fit: cover;   
+    display: block;      
+}
+
+
 .team .member .social {
 	position: absolute;
 	left: 0;
