@@ -513,7 +513,7 @@ h6,
 
 .small-img img{
 	width: 100%; 
-	height: 424px; 
+	height: 364px; 
 	object-fit: cover; 
 }
 @media (max-width: 768px) {
@@ -2503,4 +2503,24 @@ section {
 
 #footer .credits a:hover {
 	color: #e0c6ad;
+}
+
+.fixed-700 {
+  height: 700px !important;
+  min-height: 700px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+#carouselHonors,
+#carouselHonors .carousel-inner,
+#carouselHonors .carousel-item {
+  height: 700px !important;
+  min-height: 700px !important;
+  max-height: 700px !important;
+}
+#carouselHonors img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: contain !important;
 }
