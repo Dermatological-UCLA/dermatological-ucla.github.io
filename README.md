@@ -6,3 +6,4 @@ Active Contributors
 - Ariel Rose
 - Kaity Shimohara
 - James Wu
+ 
